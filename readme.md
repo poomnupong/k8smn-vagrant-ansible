@@ -1,5 +1,4 @@
 # Quick Kubernetes multi-node setup with Vagrant and Ansible
-_va005-k8smulti-vagrant-ansible_  
 2020.02.03
 
 ***Disclaimer:***  
