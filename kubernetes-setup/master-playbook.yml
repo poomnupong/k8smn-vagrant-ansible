@@ -106,7 +106,8 @@
   - name: copy kubeconfig to local dir
     fetch:
       src: /etc/kubernetes/admin.conf
-      dest: ./kubeconfig
+      dest: ../
+      flat: yes
 
   - name: Install calico pod network
     become: false
