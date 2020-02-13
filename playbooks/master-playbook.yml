@@ -106,14 +106,14 @@
   - name: copy kubeconfig to local dir
     fetch:
       src: /etc/kubernetes/admin.conf
-      dest: ../
+      dest: ../runtime-artifacts/
       flat: yes
 
   - name: Install calico pod network
     become: false
     #command: "kubectl create -f https://docs.projectcalico.org/v3.4/getting-started/kubernetes/installation/hosted/calico.yaml"
     #command: kubectl create -f https://docs.projectcalico.org/manifests/calico.yaml
-    command: kubectl create -f https://docs.projectcalico.org/manifests/calico.yaml
+    command: "kubectl create -f https://raw.githubusercontent.com/poomnupong/k8smn-vagrant-ansible/master/manifests/calico.yaml"
 
   - name: Generate join command
     command: kubeadm token create --print-join-command
