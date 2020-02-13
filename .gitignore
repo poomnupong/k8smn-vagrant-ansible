@@ -1,3 +1,6 @@
 .vagrant
 kubernetes-setup/join-command
 admin.conf
+kubecfg.crt
+kubecfg.key
+kubecfg.p12
