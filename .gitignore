@@ -1,4 +1,4 @@
 .vagrant
-kubernetes-setup/join-command
+playbooks/join-command
 runtime-artifacts
 runtime-artifacts/*
